@@ -8,20 +8,15 @@ class SinglyLinkedlist<T>
     public void InsertFrontFunction(T value)
     {
         Node<T> recruit = new Node<T>(value);
-        if(head != null)
-        {
-            head = recruit;
-            return;
-        }
         recruit.Next = head;
         head = recruit;
     }
     public void InsertLastFunction(T val)
     {
         Node<T> recruit = new Node<T>(val);
-        if(head != null)
+        Node<T> current = head;
+        if (head != null)
         {
-            Node<T> current = head;
             while (current.Next != null)
             {
                 current = current.Next;

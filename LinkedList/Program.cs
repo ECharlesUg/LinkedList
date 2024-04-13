@@ -16,7 +16,19 @@
             ll.InsertFrontFunction(10);
             ll.DeleteNodeFunction(5);
             ll.DeleteNodeFunction(6);
-            ll.FindMiddleNode();           
+            ll.FindMiddleNode();
+
+            DoubleLinkedLists<int> dl = new DoubleLinkedLists<int>();
+            dl.InsertFront(2);
+            dl.InsertFront(1);
+            dl.InsertFront(4);
+            dl.InsertFront(4);
+            dl.InsertFront(1);
+            dl.InsertFront(2);
+            dl.InsertBack(3);
+            dl.DeleteNode(3);
+            dl.IsPalindrome();
+
         }
 
     }
